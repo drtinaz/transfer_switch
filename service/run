@@ -1,4 +1,4 @@
 #!/bin/sh
 echo "*** starting Transfer Switch Monitor ***"
 exec 2>&1
-exec /data/TransferSwitch/transfer_switch.py
+exec /data/apps/transfer_switch/transfer_switch.py
