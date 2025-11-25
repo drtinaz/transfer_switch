@@ -1,7 +1,7 @@
 #!/bin/bash
 
 driver_path="/data/apps"
-driver_name="auto_switch"
+driver_name="transfer_switch"
 
 # check if /data/apps path exists
 if [ ! -d "/data/apps" ]; then
