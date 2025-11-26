@@ -14,3 +14,5 @@ v1.5
 	redirect logging to /var/log/transfer_switch
 v1.6.0
 	change to stand alone install. (setup helper no longer used)
+v1.6.1
+	fix restart script
