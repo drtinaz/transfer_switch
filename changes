@@ -16,3 +16,5 @@ v1.6.0
 	change to stand alone install. (setup helper no longer used)
 v1.6.1
 	fix restart script
+v1.6.2
+	minor changes
