@@ -20,3 +20,5 @@ v1.6.2
 	minor changes
 v1.6.3
 	update restart script
+v1.7
+	add time descriptor to logs
