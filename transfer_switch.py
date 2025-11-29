@@ -34,6 +34,20 @@ from vedbus import VeDbusService
 from ve_utils import wrap_dbus_value
 from settingsdevice import SettingsDevice
 
+# setup logging
+logger = logging.getLogger()
+
+for handler in logger.handlers[:]:
+    logger.removeHandler(handler)
+
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
+console_handler = logging.StreamHandler(sys.stdout)
+console_handler.setFormatter(formatter)
+
+logger.addHandler(console_handler)
+logger.setLevel(logging.INFO) # Default to DEBUG for better visibility
+
 
 dbusSettingsPath = "com.victronenergy.settings"
 dbusSystemPath = "com.victronenergy.system"
@@ -414,7 +428,7 @@ def main():
     from dbus.mainloop.glib import DBusGMainLoop
 
     # Configure logging to console only with default format
-    logging.basicConfig(level=logging.INFO)
+    #logging.basicConfig(level=logging.INFO)
 
     # Have a mainloop, so we can send/receive asynchronous calls to and from dbus
     DBusGMainLoop(set_as_default=True)
