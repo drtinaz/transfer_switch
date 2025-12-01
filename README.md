@@ -11,11 +11,16 @@ be changed back to 'grid' or 'shore' and the saved grid/shore current limit rest
 1. Set one of the digital input types to 'bilge pump' (not bilge alarm) and rename it to 'Transfer Switch' so that this service can identify it.
 2. Connect this digital input to a dry contact relay which is to be triggered by the automatic transfer switch when the generator is running.
 3. When the generator is running the 'Transfer Switch' digital input state should show 'On', and 'Off' when it is not. If the reverse is true, then select 'invert' in the device settings for the digital input.
-4. Install this driver via ssh by entering the following:
-   ```
-   wget -O /tmp/download.sh https://raw.githubusercontent.com/drtinaz/transfer_switch/master/download.sh
-   bash /tmp/download.sh
-   ```
+4. *************** INSTALL USING SSH ******************
+```
+wget -O /tmp/download.py https://raw.githubusercontent.com/drtinaz/scripts/main/download.py
+python /tmp/download.py
+```
+
+to uninstall:
+```
+bash /data/apps/transfer_switch/uninstall.sh
+```
 6. With the generator off, set the active ac input source to either grid or shore, whichever one you desire.
 7. Set the ac current limit desired.
 8. Start the generator and verify that the 'Transfer Switch' digital input is now showing 'On'.
