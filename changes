@@ -22,3 +22,8 @@ v1.6.3
 	update restart script
 v1.7
 	add time descriptor to logs
+v1.8
+	added check at service startup to set correct input source
+	added a wait timer and check ignore ac input status when generator shuts down, before switching back
+	to shore/grid. (generator stop timer would fail to disable ignoreacinput if the source was changed to
+	shore/grid before the timer expired, causing the ignore ac input flag to get stuck)
