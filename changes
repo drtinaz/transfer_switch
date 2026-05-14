@@ -27,3 +27,5 @@ v1.8
 	added a wait timer and check ignore ac input status when generator shuts down, before switching back
 	to shore/grid. (generator stop timer would fail to disable ignoreacinput if the source was changed to
 	shore/grid before the timer expired, causing the ignore ac input flag to get stuck)
+v1.9
+	Refactor VE.Bus service discovery and configuration methods for improved clarity and functionality. Added debouncing logic for state changes and enhanced error handling.
