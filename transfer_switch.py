@@ -475,7 +475,7 @@ class Monitor:
 
     def settings_changed(self, setting, old_value, new_value):
         """Callback when settings are changed via D-Bus"""
-        logging.info(f"Setting changed: {setting} = {new_value} (was {old_value})")
+        logging.debug(f"Setting changed: {setting} = {new_value} (was {old_value})")
         
         # If generator current limit changed AND we're currently on generator,
         # push the new value to the active current limit

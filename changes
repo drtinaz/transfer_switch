@@ -29,3 +29,5 @@ v1.8
 	shore/grid before the timer expired, causing the ignore ac input flag to get stuck)
 v1.9
 	Refactor VE.Bus service discovery and configuration methods for improved clarity and functionality. Added debouncing logic for state changes and enhanced error handling.
+v1.10
+	reduce log spamming when logging set to info
